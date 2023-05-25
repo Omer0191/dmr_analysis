@@ -1,0 +1,5 @@
+test making dmr_analysis package
+Here bedtools2.30 may have problem in intersect for long lines between two files, it will cut the long line in some predefined length 
+that may cause information loss in exported file . Currently, we can use bedtools2.27 but in future dmr_analaysis shall take care of this long line issues in the export file!! 
+November 2021
+
