@@ -7,10 +7,10 @@
    :align: center
 
 .. image:: https://user-images.githubusercontent.com/79196757/180251608-da859f67-aa58-49e8-bea8-a0258be93635.png
-   :align: right
+   :align: center
 
 .. image:: https://user-images.githubusercontent.com/79196757/180251606-8e257ad0-86d5-4cb7-b549-ed5e5c0aa9eb.jpg
-   :align: left
+   :align: center
 
 
 ============================================
