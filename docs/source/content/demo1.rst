@@ -38,7 +38,8 @@ While `job_dmr` is run in a cluster computer (SAGA) provided by Norwegian Resear
     #module purge
     #module --ignore-cache load Java/1.7.0_80
 
-    module load BEDTools/2.27.1-foss-2018b
+    module load BEDTools/2.27.1-foss-2018b #This command is specific to saga machine. If you have already installed bedtools, then you can delete this line.
+
     ./demo1_dmr_analysis_fl_12samples.sh
 
 
