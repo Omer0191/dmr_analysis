@@ -266,7 +266,9 @@ Output produced can be found under the folder:
  final_demo_data/rat_data/out_data/DMR_CpG_context/
 
  A log file is maintained to track the progress and steps of pipeline.
+
 .. code-block:: bash
+
     Thu, 30 Mar 2023 12:26:36 INFO     File load ['../../final_demo_data/fl_12samples/out_data/DMR_CpG_context/chrY/chrY_MR_data4maxBlockDistance_1000_minBlockSize_5_data.txt.gz']
     Thu, 30 Mar 2023 12:26:39 INFO     Blocks with distance greater than 1000
     Thu, 30 Mar 2023 12:26:39 INFO      and minimum data points in block 5
@@ -291,6 +293,7 @@ Output produced can be found under the folder:
 The output file contain information about DMR and are ranked. Each row shows one region with the pvalue of smoothed and interpolated data, percentages and many other values conculated in the pipeline.
 Here is how an output file look like :
 `final_demo_data/fl_12samples/out_data/DMR_CpG_context/chrY/plots/chrY_all_mr_data_range.tsv`
+
 .. code-block:: bash
     mr_id   T-test_pval_smoothed_data       T-test_pval_interpolated_data   percent_data_passed_ttest       gcb_vs_grpsDist_pval    tumor_vs_grpsDist_pval  gcb_vs_grpsDist_tval    tumor_vs_grpsDist_tval  cluster_accuracy        low_negative_tumor_vs_gcb_percent median_negative_tumor_vs_gcb_percent    high_negative_tumor_vs_gcb_percent      low_positive_tumor_vs_gcb_percent       median_positive_tumor_vs_gcb_percent  high_positive_tumor_vs_gcb_percent      is_DMR  position  DMR_type        chroms  log10_gcb_vs_grpsDist_pval      log10_tumor_vs_grpsDist_pval    log10_gcb_vs_grpsDist_pval_minMaxNorm   log10_tumor_vs_grpsDist_pval_minMaxNorm dmr_weight_score        percent_data_passed_ttest_gt_pvallogReg_score     logReg_predicted_dmr
     mr1130  0.000405656     0.00432085      0.0     0.761592        0.297122        0.310908        -1.05249        0.5     0.166667        0.0     0.0   0.0     0.0     0.0     U       chr18,63982541-63982589,5       mix     chr18   0.11827755858580184       0.5270650160086492      0.01702962203404642     0.07612316109961371     0.07490444530138562     0.0     -6.823775494058065      0.0010864253038653845
