@@ -15,11 +15,13 @@ Run Demo1:
   Demo1 can be run by executing the bash script given with the pacakge. In this demo DNA methylation Regions are found and ranked.
 
 .. code-block:: bash
+
     sbatch job_dmr
 
 While `job_dmr` is run in a cluster computer (SAGA) provided by Norwegian Research Infrastructure Services(NRIS). Remember to change this according to your machine. `job_dmr` looks like this
 
 .. code-block:: bash
+
     #!/bin/bash
     #SBATCH --job-name=demo1-dmr
     #SBATCH --time=15:00:00
@@ -90,7 +92,9 @@ Here this job calls a shell script file `demo1_dmr_analysis_fl_12samples.sh`. Th
 **In folder path:** final_demo_data/fl_12samples/in_data/WGBS-data/
 WGBS methylation profiles (input) in bed format looks like the following.
 Path: `final_demo_data/fl_12samples/in_data/WGBS-data/chr18/`
+
 .. code-block:: bash
+
     chr18   57000331        57000331        0.88    33      1
     chr18   57000413        57000413        0.9     48      1
     chr18   57000458        57000458        0.75    51      1
@@ -110,6 +114,7 @@ In the first step, the DMRs are predicted and then predicted DMRs and MRs are th
 
 Step 1:
 ______
+
 .. code-block:: bash
 
     #STEP 1. run dmr_analysis to predict DMRs
@@ -193,6 +198,7 @@ In the third step, it maps the predicted DMRs and MRs to predefined genomic regi
 
 
 .. code-block:: bash
+
     #STEP 3. mapp predicted DMR/MRs to predefined genomic regions (e.g., TSS, TES, 5dist etl al) or predicted chromatin segments for further analysis
     #below is a result file generated from dmr_combine_multChrs4rank, where DMR/MRs from multiple chromosomes are combined and ranked them by logisitic regression model
     #-- Please note this file name needs to be input manually because it is generated after running "dmr_combine_multChrs4rank" and expored at folder "out_result_folder"
