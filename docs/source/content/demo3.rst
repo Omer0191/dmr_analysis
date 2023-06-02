@@ -32,7 +32,7 @@ While `job_dmr` is run in a cluster computer (SAGA) provided by Norwegian Resear
     #module unload Java/1.8.0_212
     #module purge
     #module --ignore-cache load Java/1.7.0_80
-    module load BEDTools/2.27.1-foss-2018b
+    module load BEDTools/2.27.1-foss-2018b #This command is specific to saga machine. If you have already installed bedtools, then you can delete this line.
     ./run_rat_part1_test.sh
 
 Here this job calls a shell script file `run_rat_part1_test.sh`. This script is prepared by calling different modules of the dmr analysis. The demo assumes that the input data is already prepared in bed format, organized in chromosome named folders, and that the genome size file and refFlat files are available in a separate folder. Some initial parameter setting is done in the start of the script file as follows:
