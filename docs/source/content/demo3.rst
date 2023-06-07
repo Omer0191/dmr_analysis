@@ -24,7 +24,7 @@ While `job_dmr` is run in a cluster computer (SAGA) provided by Norwegian Resear
     # Number of cores:
     #SBATCH --cpus-per-task=20
 
-    #set up job enviroment
+    #set up job environment
     #source /etc/profile.d/modules.csh
     #source /cluster/bin/jobsetup
     #module use --append /cluster/etc/modulefiles
@@ -44,7 +44,7 @@ Here this job calls a shell script file `run_rat_part1_test.sh`. This script is 
 
     #!/bin/bash
     #use bash script to call dmr_analysis
-    #this demo does not include chromatin segment data and no combination of restuls from genomic regions with chromatin segmentations.
+    #this demo does not include chromatin segment data and no combination of results from genomic regions with chromatin segmentations.
     ##Please note variable under "#-- " have to be manually adjusted in different run or in different input data!
 
 
@@ -154,7 +154,7 @@ ____________________________
     in_wildType_string='_Ctrl'
 
     #a) some additional features for plotting and exporting data
-    #select DMR for ploting such as mr5,mr9,mr11
+    #select DMR for plotting such as mr5,mr9,mr11
     #here --in_DMR_file is exported by dmr_combine_multChrs4rank in "out_result_folder"/chrY/plots
     ##--in_data_file is exported by dmr_analysis_block in "out_result_folder"/chrY
     dmr_analysis dmr_selected4plot --in_DMR_file ${in_DMR_file} \
@@ -167,7 +167,7 @@ ____________________________
     echo plot selected MR - Done
 
     #b) export selected DMR based on bed format file 0
-    ##--input_file_name contains all MRs in bed foramt that need to extract their raw and smoothed methylation data
+    ##--input_file_name contains all MRs in bed format that need to extract their raw and smoothed methylation data
     dmr_analysis dmr_exportData  \
                            --input_mr_data_folder ${out_result_folder} \
                            --output_file_folder ${out_result_folder}/out_exportData \
@@ -188,15 +188,15 @@ In the third step, it maps the predicted DMRs and MRs to predefined genomic regi
 .. code-block:: bash 
 
     #STEP 3. mapp predicted DMR/MRs to predefined genomic regions (e.g., TSS, TES, 5dist etl al) or predicted chromatin segments for further analysis
-    #below is a result file generated from dmr_combine_multChrs4rank, where DMR/MRs from multiple chromosomes are combined and ranked them by logisitic regression model
-    #-- Please note this file name needs to be input manually because it is generated after running "dmr_combine_multChrs4rank" and expored at "out_result_folder"
+    #below is a result file generated from dmr_combine_multChrs4rank, where DMR/MRs from multiple chromosomes are combined and ranked them by logistic regression model
+    #-- Please note this file name needs to be input manually because it is generated after running "dmr_combine_multChrs4rank" and exported at "out_result_folder"
     #mr_IN_FILE='5_chroms_high_miniPercentChange_gt_0.0001_Pcutoff_0.05_isSmooth_2_isModTest_0__range_dmrRanking_top_0.73_minLogReg_proba_0.6'
     #mr_IN_FILE='*_chroms_all_mr_data_range_dmrRanking'
 
     #a) generate predefined genomic regions (e.g., TSS, TES, gene et al.) by dmr_analysis (Used for gene annotation, Omer 27, April, 23)
 
     #Here, to edit exported "list_region_files.txt" for adding/removing predefined genomic regions
-    #For example, to add file path for enhancer reginos in "list_region_files.txt" if user want to include enhancer in the analysis
+    #For example, to add file path for enhancer regions in "list_region_files.txt" if user want to include enhancer in the analysis
 
     dmr_analysis dmr_gene_annotation -F ${out_result_folder} -i no -l 10 \
             -xL 50000000 -X 5000 -Y 1000 -M 5000 -N 1000000 -hu yes -n no \
@@ -240,10 +240,10 @@ _______
     Tue, 14 Mar 2023 19:06:10 INFO     Export data in  ../../final_demo_data/rat_data/out_data/DMR_CpG_context/chr1_MR_data4maxBlockDistance_1000_minBlockSize_5_data.txt
     Tue, 14 Mar 2023 19:06:11 INFO     minimum MR length 139
     Tue, 14 Mar 2023 19:06:11 INFO     maximum MR length 143799
-    Tue, 14 Mar 2023 19:06:11 INFO     Maximum length of adjancey CpG sites in a block 1000
+    Tue, 14 Mar 2023 19:06:11 INFO     Maximum length of adjacency CpG sites in a block 1000
     Tue, 14 Mar 2023 19:06:11 INFO     Hist plot n [ 0  2  1  4  3 15  2  2]
     Tue, 14 Mar 2023 19:06:11 INFO              bins [   100    139    500   1000   5000  10000  50000 100000 143899]
-    Tue, 14 Mar 2023 19:06:11 INFO     mininum MR data size 5
+    Tue, 14 Mar 2023 19:06:11 INFO     minimum MR data size 5
     Tue, 14 Mar 2023 19:06:11 INFO     maximum MR data size 3429
     Tue, 14 Mar 2023 19:06:17 INFO     Wild type /control sample file name is _Ctrl
     Tue, 14 Mar 2023 19:06:17 INFO     Wild/control sample 5 ,
@@ -254,7 +254,7 @@ _______
     Tue, 14 Mar 2023 19:31:23 INFO     Export all position results at : ../../final_demo_data/rat_data/out_data/DMR_CpG_context/chr1/plots/chr1_all_mr_data.tsv
     Tue, 14 Mar 2023 19:31:23 INFO     Export range position results at : ../../final_demo_data/rat_data/out_data/DMR_CpG_context/chr1/plots/chr1_all_mr_data_range.tsv
 
-The output file contain information about DMR and are ranked. Each row shows one region with the pvalue of smoothed and interpolated data, percentages and many other values conculated in the pipeline.
+The output file contain information about DMR and are ranked. Each row shows one region with the p-value of smoothed and interpolated data, percentages and many other values calculated in the pipeline.
 Here is how an output file look like :
 
 .. code-block:: bash

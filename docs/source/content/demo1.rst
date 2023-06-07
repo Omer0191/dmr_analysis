@@ -38,8 +38,7 @@ While `job_dmr` is run in a cluster computer (SAGA) provided by Norwegian Resear
     #module purge
     #module --ignore-cache load Java/1.7.0_80
 
-    module load BEDTools/2.27.1-foss-2018b #This command is specific to saga machine. If you have already installed bedtools, then you can delete this line.
-
+    module load BEDTools/2.27.1-foss-2018b
     ./demo1_dmr_analysis_fl_12samples.sh
 
 
@@ -73,7 +72,7 @@ Here this job calls a shell script file `demo1_dmr_analysis_fl_12samples.sh`. Th
 
     #path of input chromatin segment folder
     #such as combined chromatin segment from six human cell lines generated from Encode project https://genome.ucsc.edu/cgi-bin/hgFileUi?db=hg19&g=wgEncodeAwgSegmentation
-    #-- where each predicted chromatin type (e.g., TSS, Enhancers) is listed in a bed formated file and the file name indicate the predicted chromatin type.
+    #-- where each predicted chromatin type (e.g., TSS, Enhancers) is listed in a bed formatted file and the file name indicate the predicted chromatin type.
     in_chromSegment_folder='../../final_demo_data/chromSegment/hg19/'
 
     #output data folder

@@ -35,7 +35,7 @@ While `job_dmr` is run in a cluster computer (SAGA) provided by Norwegian Resear
     #module unload Java/1.8.0_212
     #module purge
     #module --ignore-cache load Java/1.7.0_80
-    module load BEDTools/2.27.1-foss-2018b #This command is specific to saga machine. If you have already installed bedtools, then you can delete this line.
+    module load BEDTools/2.27.1-foss-2018b
 
     ./demo2_hap1_cell.sh
 
@@ -145,7 +145,7 @@ In the first step, the DMRs are predicted and then predicted DMRs and MRs are th
 Step 2: Plot and Export DMRs
 ____________________________
 
-In the second step, the script plots using dmr_selected4plot and exports data for selected DMRs using the module dmr_exportData. The code and parameter setting can be seen as follows:
+- In the second step, the script plots using dmr_selected4plot and exports data for selected DMRs using the module dmr_exportData. The code and parameter setting can be seen as follows:
 - In part a, the `dmr_selected4plot` module is used to select DMRs for plotting.
 - In part b, output data and results are then exported using the `dmr_exportData` module. Here only chromosome 18 is selected for demo purposes.
 

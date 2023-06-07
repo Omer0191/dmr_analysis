@@ -26,5 +26,5 @@ Optional Parameters
 - ``-inNdChk`` or ``--needs_check_mr``: String ID of selected DMR/MRs that will be checked/plotted/data exported, comma-separated. For example, 'mr10,mr111.' The default is not to check.
 - ``-dpi`` or ``--figure_dpi``: Export figure resolution in DPI. The default dpi is 30.
 - ``-format`` or ``--figure_format``: File format of the exported figure, such as jpg, svg, pdf, or png. The default is pdf.
-- ``-wtStr`` or ``--wildType_fileString``: A file name of the wild-type condition file, which should start with specific characters. For example, if a file name starts with 'gcb_meht1_*' is a wild-type/control sample, then ``--wildType_fileString`` is 'gcb,' which is the default setting in the program.
+- ``-wtStr`` or ``--wildType_fileString``: A file name of the wild-type condition file, which should start with specific characters. For example, if a file name starts with 'gcb_meth1_*' is a wild-type/control sample, then ``--wildType_fileString`` is 'gcb,' which is the default setting in the program.
 
