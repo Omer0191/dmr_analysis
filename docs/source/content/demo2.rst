@@ -291,7 +291,7 @@ A log file is maintained to track the progress and steps of pipeline.
     Wed, 19 Apr 2023 16:27:43 INFO     Export all position results at : ../../final_demo_data/hap1_cell/out_data/DMR_CpG_context/chr3/plots/chr3_all_mr_data.tsv
     Wed, 19 Apr 2023 16:27:43 INFO     Export range position results at : ../../final_demo_data/hap1_cell/out_data/DMR_CpG_context/chr3/plots/chr3_all_mr_data_range.tsv
 
-The output file contain information about DMR and are ranked. Each row shows one region with the pvalue of smoothed and interpolated data, percentages and many other values conculated in the pipeline.
+The output file contain information about DMR and are ranked. Each row shows one region with the pvalue of smoothed and interpolated data, percentages and many other values calculated in the pipeline.
 Here is how an output file look like:
 
 .. code:: bash
@@ -311,3 +311,8 @@ Top two rows of all results file looks like following. It gives information abou
     chr3    8102773 8107735 chr3:mr1:mix:D  0.987977        chr3:7501658:8496658:NR_033378||5distD:5000:1000000||LMCD1AS1:-:8221146:8501658~chr3:7644798:8639798:NM_001256748||5distD:5000:1000000||SSUH2:-:8619402:8644798~chr3:7652084:8647084:NM_015931||5distD:5000:1000000||SSUH2:-:8619402:8652084~chr3:7769614:8764614:NM_000916||5distD:5000:1000000||OXTR:-:875040:8769614~chr3:7769232:8764232:NM_001354655||5distD:5000:1000000||OXTR:-:8750408:8769232~chr3:7768731:8763731:NM_001354656||5distD:5000:1000000||OXTR:-:8750408:8768731~chr3:7963472:8958472:NM_020165||5distD:5000:1000000||RAD18:-:8877074:8963472~chr3:8021307:8216146||intergenic:5000:1000~chr3:7540284:8535284:NR_046606||5dist:5000:1000000||GRM7AS1:-:7519740:7535284~chr3:8021307:9016307:NR_110131||5dist:5000:1000000||LOC101927394:-:7952804:8016307~chr3:7501806:8496806:NM_001278234||5dist:5000:1000000||LMCD1:+:8501806:8568125~chr3:7501822:8496822:NM_001278233&NM_001278235||5dist:5000:1000000||LMCD1:+:8501822:8574668&8551274~chr3:7571781:8566781:NR_024065||5dist:5000:1000000||LINC00312:+:8571781:8574668~chr3:7733801:8728801:NM_001234||5dist:5000:1000000||CAV3:+:8733801:8746758 R~T
     chr3    8108750 8115603 chr3:mr2:mix:D  0.981631  chr3:7501658:8496658:NR_033378||5distD:5000:1000000||LMCD1AS1:-:8221146:8501658~chr3:7644798:8639798:NM_001256748||5distD:5000:1000000||SSUH2:-:86194028644798~chr3:7652084:8647084:NM_015931||5distD:5000:1000000||SSUH2:-:8619402:8652084~chr3:7769614:8764614:NM_000916||5distD:5000:1000000||OXTR:-:8750408:8769614~chr3:7769232:8764232:NM_001354655||5distD:5000:1000000||OXTR:-:8750408:8769232~chr3:7768731:8763731:NM_001354656||5distD:5000:1000000||OXTR:-:8750408:8768731~chr3:7963472:8958472:NM_020165||5distD:5000:1000000||RAD18:-:8877074:8963472~chr3:8021307:8216146||intergenic:5000:1000~chr3:7540284:853584:NR_046606||5dist:5000:1000000||GRM7AS1:-:7519740:7535284~chr3:8021307:9016307:NR_110131||5dist:5000:1000000||LOC101927394:-:7952804:8016307~chr3:7501806:8496806:NM_001278234||5dist:5000:1000000||LMCD1:+:8501806:8568125~chr3:7501822:8496822:NM_001278233&NM_001278235||5dist:5000:1000000||LMCD1:+:8501822:8574668&8551274~chr3:7571781:8566781:NR_024065||5dist:5000:1000000||LINC00312:+:8571781:8574668~chr3:7733801:8728801:NM_001234||5dist:5000:1000000||CAV3:+:8733801:8746758 PF~R~CTCF~T~E~WE
 
+
+From above two mrs, here we will visualize methylation region 2 of chromosome 3.
+
+.. image:: chr3_DMR_mr2.jpg
+    :alt: Chr3 Methylation Region 2

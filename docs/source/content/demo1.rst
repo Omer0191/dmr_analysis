@@ -113,7 +113,7 @@ In the first step, the DMRs are predicted and then predicted DMRs and MRs are th
 
 
 Step 1:
-______
+_______
 
 .. code-block:: bash
 
@@ -146,7 +146,7 @@ ______
     echo dmr_combine_multChrs4rank - Done
 
 Step 2:
-______
+_______
   In the second step, the script plots using dmr_selected4plot and exports data for selected DMRs using the module dmr_exportData. The code and parameter setting can be seen as follows:
 
 - In part a, the `dmr_selected4plot` module is used to select DMRs for plotting.
@@ -187,7 +187,7 @@ ______
     echo "dmr_ExportData -- Done"
 
 Step 3:
-______
+_______
 
 In the third step, it maps the predicted DMRs and MRs to predefined genomic regions using dmr_analysis.. This demo also includes several parameters that can be manually adjusted , such as the path of the input and output data folders, the name of output folders and files, and the selected DMRs for plotting.
 
@@ -318,3 +318,8 @@ Top two rows of all results file looks like following. It gives information abou
     mr_chrs mr_start_pos    mr_end_pos      mr_info mr_logReg_proba genome_info     chromSegment_info
     chr18   57022124        57027729        chr18:mr5:hypo:D        0.999871        chr18:57025497:57031497:NM_005570||TSS:5000:1000||LMAN1:-:56995055:57026497~chr18:56996055:57025497:NM_005570||gene:5000:1000||LMAN1:-:56995055:5702649~E~R~TSS~PF~T
     chr18   57028952        57030829        chr18:mr6:hypo:D        0.999902        chr18:57025497:57031497:NM_005570||TSS:5000:1000||LMAN1:-:56995055:57026497~chr18:56343696:57338696:NM_006785||5distD:5000:1000000||MALT1:+:56338696:56221709~chr18:56486111:57481111:NR_146904||5distD:5000:1000000||LINC01926:+:56481111:56501596~chr18:56535155:57530155:NM_018181||5distD:5000:1000000||ZNF332:+:56530155:56653712~chr18:56535714:57530714:NM_001353526||5distD:5000:1000000||ZNF532:+:56530714:56653712~chr18:56536322:57531322:NM_001318728||5distD:5000:1000000||ZNF532:+:56531322:56653712~chr18:56536590:57531590:NM_001353531||5distD:5000:1000000||ZNF532:+:56531590:56653712~chr18:56537108:57532108:NM_001353527||5distD:5000:1000000||ZNF532:+:56532108:56653712~chr18:56707910:57702910:NR_024021||5distD:5000:1000000||OACYLP:+:56702910:56720446~chr18:56812115:57807115:NM_001307941||5distD:5000:1000000||SEC11C:+:56807115:56826063~chr18:56892389:57887389:NM_001012513||5distD:5000:1000000||GRP:+:56887389:56898002~chr18:56364655:57359655:NM_133459||5distD:5000:1000000||CCBE1:-:57098170:57364655~chr18:56301323:57296323:NM_052947||5dist:5000:1000000||ALPK2:-:56148481:56296323~chr18:56945686:57940686:NM_013435||5dist:5000:1000000||RAX:-:56934269:56940686~chr18:56990881:57985881:NM_181654||5dist:5000:1000000||CPLX4:-:56962633:56985881~chr18:56567227:57562227:NM_021127||5dist:5000:1000000||PMAIP1:+:57567227:57571537     R~T
+
+From above two mrs, here we will visualize mr5.
+
+.. image:: chr18_DMR_mr5.jpg
+    :alt: Chr18 Methylation Region 5
