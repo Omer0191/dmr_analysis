@@ -24,24 +24,24 @@ dmr_analysis is a software tool for differentially Methylated Regions analysis t
 Contents:
 ---------
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   content/installation
-   content/dmr_analysis_block
-   content/dmr_combine_multChrs4rank
-   content/dmr_selected4plot
-   content/dmr_map2genome
-   content/dmr_map2chromSegment
-   content/dmr_cal2genome_percent
-   content/dmr_cal2chromSegment_percent
-   content/dmr_percent2plot
-   content/dmr_combine2geneAnnot
-   content/dmr_exportData
-   content/dmr_gene_annotation
-   content/check_accuracy4cluster
-   content/demo1
-   content/demo2
-   content/demo3
+   source/content/installation
+   source/content/dmr_analysis_block
+   source/content/dmr_combine_multChrs4rank
+   source/content/dmr_selected4plot
+   source/content/dmr_map2genome
+   source/content/dmr_map2chromSegment
+   source/content/dmr_cal2genome_percent
+   source/content/dmr_cal2chromSegment_percent
+   source/content/dmr_percent2plot
+   source/content/dmr_combine2geneAnnot
+   source/content/dmr_exportData
+   source/content/dmr_gene_annotation
+   source/content/check_accuracy4cluster
+   source/content/demo1
+   source/content/demo2
+   source/content/demo3
 
 
 Contents of the package:
