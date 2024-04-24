@@ -6,11 +6,12 @@ Download:
 _________
 dmr_analysis is written in python. It can be installed and accessed from command line and is available for both linux and mac operating systems. 
 
-Please send email to Dr. Junbai Wang (junbai.wang@medisin.uio.no) for requesting a free download of DDS-analysis pacakge.
+Please send email to Dr. Junbai Wang (junbai.wang@medisin.uio.no) for requesting a free download of DMR-analysis pacakge.
 
 Please include your name, Institution/company name, Email of your institute or company (do not use gmail or yahoo email etc), and a brief description of the purpose for using bpb3 package.
 
 Please use the subject title "bpb3/dds request "  for your email.
+
 Install:
 ________
 
